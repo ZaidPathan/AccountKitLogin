@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccountKitLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qla-6H-uGx">
+                                <rect key="frame" x="150" y="216" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.4205903943" green="0.51515310400000003" blue="0.9583158557" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="EHj-Hy-O5t"/>
+                                    <constraint firstAttribute="height" constant="50" id="mBu-Wx-y6d"/>
+                                </constraints>
+                                <state key="normal" title="Login with Phone Number">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="IBActionLoginWithPhoneNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rU5-CJ-SUG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otv-sc-zPA">
+                                <rect key="frame" x="150" y="329" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.4205903943" green="0.51515310400000003" blue="0.9583158557" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ILO-Fj-Imh"/>
+                                    <constraint firstAttribute="width" constant="300" id="ZTn-hj-iCu"/>
+                                </constraints>
+                                <state key="normal" title="Login with Email">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="IBActionLoginWithEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7r-h1-b7j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Logged In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsx-jQ-fa9">
+                                <rect key="frame" x="246" y="28" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zsx-jQ-fa9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dp2-hg-Myg"/>
+                            <constraint firstItem="qla-6H-uGx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" constant="1" id="RCM-Um-AEK"/>
+                            <constraint firstItem="zsx-jQ-fa9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UkM-rk-34J"/>
+                            <constraint firstItem="Otv-sc-zPA" firstAttribute="top" secondItem="qla-6H-uGx" secondAttribute="bottom" constant="63" id="dP8-Wv-Ltx"/>
+                            <constraint firstItem="qla-6H-uGx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gR3-3A-xcS"/>
+                            <constraint firstItem="Otv-sc-zPA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vr3-kG-xSg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="IBlblLoggedInState" destination="zsx-jQ-fa9" id="RvR-Lo-zdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
