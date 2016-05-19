@@ -2,7 +2,7 @@
 ___
 Login with Mobile Number and Email is made simple by Facebook's all new AccountKit framework.
 
-This SourceCode is linked with BeMyApp's tutorial.
+This SourceCode is linked with [BeMyApp's tutorial](http://media.bemyapp.com/code-tutorial-accountkit-integration-swift-universal-app/?utm_source=bma&utm_medium=github&utm_content=&utm_campaign=media).
   
 ### Usage
 ___
